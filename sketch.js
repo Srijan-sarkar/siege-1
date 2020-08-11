@@ -18,6 +18,7 @@ function setup() {
   block6 = new Block(400,120,40,40);
   ground1 = new Ground(400,300,200,10);
   stone = new Stone(100,200,30,30);
+  ground2 = new Ground(400,400,800,30)
 
   ss = new SlingShot(stone.body,{x:100,y:200});
 
@@ -36,6 +37,7 @@ function draw() {
   ground1.display();
   stone.display();
   ss.display();
+  ground2.display();
 
   drawSprites();
 }
